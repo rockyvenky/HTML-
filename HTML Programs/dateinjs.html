@@ -1,0 +1,16 @@
+<html>
+<head>
+       Current Date and Time:<span id="tx"></span>
+	   <script>
+	      var today =new Date();
+		  document.getElementById('tx').innerHTML=today;
+	   </script>
+	   <script>
+	      var date=new Date();
+		  var day=date.getDate();
+		  var month=date.getMonth()+1;
+		  var year=date.getFullYear();
+		  document.write("<br>Date is:"+day+"/"+month+"/"+year);
+	   </script>
+</head>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+     <title>PIN</title>
+	 <script>
+        function pinval()
+        {
+            var k=document.getElementById("pin").value
+            if(isNaN(k))
+            {
+                document.getElementById("p1").innerHTML="Invalid Pin,Numbers only";
+                document.getElementById("p1").style.color="red";
+            }
+            else if(k.length<6)
+            {
+                document.getElementById("p1").innerHTML="Must be a minimum of 6 digits.";
+                document.getElementById("p1").style.color="red";
+            }
+            else{
+                document.getElementById("p1").innerHTML="pin success";
+                document.getElementById("p1").style.color="green";
+            }
+        }
+        </script>
+</head>
+<body>
+        <center><h1>PINCODE VALIDITY</h1>
+        <label>Enter PINCODE : </label>
+		<input type="text" id="pin"><br><br>
+    <input type="button" value="Validate PIN" onclick="pinval()">
+<h1 id="p1"></h1> 
+</center>
+</body>
+</html>
